@@ -73,18 +73,27 @@ def insert_new_data(data):
 def main_post_controller():
     global current_id
     current_id=0
+    current_data="data"
+    circle=True
     if(check_shedule()):
         try:
-            print("stage1")
-            get_data()
-            print("stage2")
-            if(current_data=="nopostavailable"):
-                print("no post available")
-            else:
-                print(current_id)
-                post_to_twitter()
-                update_to_server()
-                print("crypto post done")
+            while(circle):
+                get_data()
+                if(current_data=="nopostavailable"):
+                    print("no post available")
+                    circle=False
+                else:
+                    
+                    if(current_id!=0):
+                        print(current_id)
+                        #post_to_telegram() 
+                        post_to_twitter()
+                        update_to_server()
+                        print("crypto post done")
+                    else:
+                        circle=False
+                        print("in loop")
+                    
         except:
             print("error occured")
 
