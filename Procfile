@@ -1,2 +1,2 @@
 worker: python3 -m CryptoServer
-ps:scale worker=0
+ps:scale worker=1
