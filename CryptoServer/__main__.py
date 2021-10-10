@@ -4,7 +4,7 @@ import requests
 import time
 import json
 import tweepy
-from CrptoServer.Telegram import telegramsend
+from CryptoServer.Telegram import telegramsend
 
 current_id=1
 current_data=""
