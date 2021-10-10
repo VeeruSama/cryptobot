@@ -4,7 +4,7 @@ import requests
 import time
 import json
 import tweepy
-import Telegram.telegramsend
+from CrptoServer.Telegram import telegramsend
 
 current_id=1
 current_data=""
@@ -57,7 +57,7 @@ def post_to_twitter():
 
 def post_to_telegram():
     print("test")
-    Telegram.telegramsend.posttotele(current_data)
+    telegramsend.posttotele(current_data)
     print("test1")
     return True
 
