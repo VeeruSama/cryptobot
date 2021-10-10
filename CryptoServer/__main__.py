@@ -94,4 +94,4 @@ def main_post_controller():
 # insert_new_data("Hello how are you")
 while(True):
     main_post_controller()
-    time.sleep(900)
+    time.sleep(9)
