@@ -12,8 +12,8 @@ from telethon import TelegramClient
 Message="Hello There"
 JobLink=""
 api_id = 8191249
-api_hash = '10bd3ac4432d28930afcca6276fc10bd'
-Bot_token = '2050705893:AAHGd-AfBJVyfYqAu3LaAf9Fb6Dlpl9EiMs'
+api_hash = "10bd3ac4432d28930afcca6276fc10bd"
+Bot_token = "2050705893:AAHGd-AfBJVyfYqAu3LaAf9Fb6Dlpl9EiMs"
 client2=TelegramClient('bot',api_id,api_hash).start(bot_token=Bot_token)
 
 def posttotele(msg):
